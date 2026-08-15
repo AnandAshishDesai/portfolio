@@ -4,7 +4,68 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
+    
+    <!-- SEO and Open Graph Meta Tags -->
+    <title>Anand Desai | Cybersecurity & AI Portfolio</title>
+    <meta name="description" content="Portfolio of Anand Desai, Master's student in Cybersecurity at Rutgers University, specializing in IT Support, AI, and technical problem-solving." />
+    <meta name="keywords" content="Anand Desai, Cybersecurity, IT Support, AI, Python, React, Portfolio" />
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Theme Initialization Script -->
+    <script>
+      (function() {
+        const storedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (storedTheme === 'dark' || (!storedTheme && systemPrefersDark)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+
+    <!-- ScholarlyArticle Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ScholarlyArticle",
+          "headline": "Review: Digital Forensics",
+          "author": [
+            { "@type": "Person", "name": "Anand Desai" },
+            { "@type": "Person", "name": "Siddhesh Masurkar" }
+          ],
+          "datePublished": "2021-12",
+          "publisher": {
+            "@type": "Organization",
+            "name": "International Journal of Advanced Research in Science, Communication and Technology (IJARSCT)"
+          },
+          "sameAs": "https://doi.org/10.48175/IJARSCT-2168"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "headline": "Enhancing Home and Commercial Security: A Multi-Modal Authentication Framework for Keyless Door Lock Systems",
+          "author": [
+            { "@type": "Person", "name": "Anand Desai" },
+            { "@type": "Person", "name": "Chintan Shah" },
+            { "@type": "Person", "name": "Mandar Bivalkar" }
+          ],
+          "datePublished": "2025-05",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Indian Journal of Cryptography and Network Security (IJCNS)",
+            "url": "https://www.ijcns.latticescipub.com/portfolio-item/A143605010525/"
+          },
+          "sameAs": "https://doi.org/10.54105/ijcns.A1436.05010525"
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
