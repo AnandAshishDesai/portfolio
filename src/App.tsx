@@ -133,9 +133,9 @@ const App = () => {
         
         {/* PROFILE HEADER (Hero Section) */}
         <section id="hero" style={{ paddingTop: '5rem', paddingBottom: '2rem' }}>
-          <div style={{ color: 'var(--accent-primary)', fontFamily: 'monospace', marginBottom: '1.5rem', fontWeight: 600 }}>
+          {/* <div style={{ color: 'var(--accent-primary)', fontFamily: 'monospace', marginBottom: '1.5rem', fontWeight: 600 }}>
             $ ./initialize_portfolio.sh
-          </div>
+          </div> */}
           
           <div className="flex items-center" style={{ marginBottom: '2rem', flexWrap: 'wrap', gap: '2rem' }}>
             <img 
