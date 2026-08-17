@@ -33,26 +33,49 @@ const App = () => {
     localStorage.setItem('theme', newTheme);
   };
 
-  // Scroll Observers for Active Nav & Scroll-to-Top
+  // Scroll & Active Nav Spy (Math-based to prevent skipping)
   useEffect(() => {
-    const handleScroll = () => setShowScrollTop(window.scrollY > 400);
-    window.addEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      // 1. Toggle the scroll-to-top button
+      setShowScrollTop(window.scrollY > 400);
 
-    const sectionObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
+      // 2. Math-based Scroll Spy for Nav Highlighting
+      const sections = document.querySelectorAll('section');
+      let currentSectionId = '';
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        
+        // 120px offset accounts for your sticky header height + a little breathing room
+        if (window.scrollY >= sectionTop - 120) {
+          currentSectionId = section.getAttribute('id') || '';
         }
       });
-    }, { threshold: 0.2 });
 
-    document.querySelectorAll('section').forEach(section => {
-      sectionObserver.observe(section);
-    });
+      // 3. Edge Case Fix: If the user scrolls to the absolute bottom of the page,
+      // force highlight the last section (Contact) in case it's too short to hit the top offset.
+      if (Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight) {
+        const lastSection = sections[sections.length - 1];
+        if (lastSection) {
+          currentSectionId = lastSection.getAttribute('id') || '';
+        }
+      }
 
+      // Update the state only if we found a valid section
+      if (currentSectionId) {
+        setActiveSection(currentSectionId);
+      }
+    };
+
+    // Listen for scroll events
+    window.addEventListener('scroll', handleScroll);
+    
+    // Run it once immediately on page load to set the initial state
+    handleScroll();
+
+    // Cleanup listener on unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      sectionObserver.disconnect();
     };
   }, []);
 
