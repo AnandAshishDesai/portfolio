@@ -5,15 +5,21 @@ export const resumeData = {
     email: "anand.ashish.desai@gmail.com",
     phone: "+1 (732) 421-5854",
     linkedin: "https://www.linkedin.com/in/anand-desai-1a4963204/",
-    github: "https://github.com/YOUR_GITHUB_USERNAME_HERE", 
+    github: "https://github.com/AnandAshishDesai", 
   },
   summary: "Detail-oriented Cybersecurity Master's student at Rutgers University with a strong foundation in Computer Engineering. Experienced in technical IT support, systems administration, and deploying secure solutions. Passionate about solving complex problems at the intersection of AI, networking, and information security.",
   skills: {
-    cybersecurity: ["Wireshark", "Burp Suite", "Cisco Packet Tracer", "Network Troubleshooting", "Endpoint Security", "Incident Management"],
+    cybersecurity: [
+      "Cybersecurity Risk Analysis", "Technology Risk", "Data Security", 
+      "Endpoint Security", "IAM", "Incident Management", "Security Analysis", 
+      "Phishing Detection", "Authentication", "Access Control", 
+      "Network Troubleshooting", "Firewall Monitoring", "Wireshark", 
+      "Burp Suite", "Cisco Packet Tracer"
+    ],
     cloud: ["Microsoft Azure", "AWS", "Google Firebase"],
-    programming: ["Python", "Java", "C#", "C/C++", "SQL"],
-    tools: ["React", "Git", "GitHub", "Android Studio", "VS Code"],
-    ai: ["OpenCV", "Scikit-learn", "Matplotlib", "Seaborn", "Librosa"]
+    programming: ["Python", "Java", "C#", "C/C++", "SQL", "Pandas", "CSV"],
+    tools: ["React", "Git", "GitHub", "Android Studio", "VS Code", "Tkinter"],
+    ai: ["OpenCV", "Scikit-learn", "Matplotlib", "Seaborn"]
   },
   experience: [
     {
@@ -21,10 +27,10 @@ export const resumeData = {
       company: "Rutgers Professional Science Master’s Program",
       date: "May 2026 – Present",
       bullets: [
-        "Provided IT support for university events by configuring audiovisual equipment, presentation systems, and network connectivity.",
-        "Assisted with endpoint setup, software installation, and routine system maintenance across departmental IT infrastructure.",
-        "Collaborated with fellow student coordinators to troubleshoot hardware, software, and connectivity issues.",
-        "Followed standardized operational procedures for incident reporting and technical support documentation."
+        "Supported technology operations by configuring endpoints, audiovisual systems, and network connectivity to maintain reliable and secure digital environments.",
+        "Investigated and resolved hardware, software, and network incidents by gathering information and analyzing technical issues to minimize service disruptions.",
+        "Collaborated with team members to identify technology risks, troubleshoot recurring issues, and implement solutions across departmental IT infrastructure.",
+        "Provided client-focused technical support while clearly communicating solutions to faculty, staff, students, and event participants."
       ]
     },
     {
@@ -32,10 +38,10 @@ export const resumeData = {
       company: "Jones Lang LaSalle (JLL)",
       date: "Feb 2025 – May 2025",
       bullets: [
-        "Configured, assembled, and deployed desktop systems based on client requirements.",
-        "Diagnosed and resolved hardware, software, printer, and peripheral issues.",
-        "Performed routine Tally backups and maintained secure handling of organizational financial data.",
-        "Assisted in network troubleshooting, monitored firewall activity, and supported endpoint security initiatives."
+        "Deployed and configured desktop endpoints to client requirements and organizational standards, supporting reliable and secure technology environments.",
+        "Diagnosed and resolved hardware, software, printer, and peripheral incidents by analyzing root causes and implementing timely solutions.",
+        "Monitored firewall activity and supported network troubleshooting and endpoint security initiatives to identify and address technology risks.",
+        "Collaborated with cross-functional teams to investigate incidents, gather information, communicate findings, and deliver client-focused solutions."
       ]
     },
     {
@@ -43,19 +49,9 @@ export const resumeData = {
       company: "Blacksoil Pvt. Ltd.",
       date: "Jun 2023 – Jul 2023",
       bullets: [
-        "Installed, configured, and maintained desktop systems supporting day-to-day business operations.",
-        "Resolved hardware, software, and peripheral issues across multiple departments.",
-        "Conducting scheduled Tally backups ensuring data integrity and secure record management."
-      ]
-    },
-    {
-      title: "IT Trainee",
-      company: "G-Info Solutions",
-      date: "Sep 2021 – Oct 2021",
-      bullets: [
-        "Assembled and configured desktop systems for client deployments.",
-        "Supported Identity and Access Management (IAM) operations using Microsoft Azure.",
-        "Installed antivirus software and enterprise applications across Windows endpoints."
+        "Installed, configured, and maintained Windows endpoints across departments to support reliable and secure business operations.",
+        "Investigated and resolved hardware, software, and peripheral incidents by analyzing issues and implementing solutions to reduce disruptions.",
+        "Collaborated with internal teams to gather requirements, troubleshoot issues, and provide responsive client-focused technology support."
       ]
     }
   ],
@@ -63,20 +59,14 @@ export const resumeData = {
     {
       title: "PhishShield",
       tech: "Python, Tkinter, Pandas, CSV",
-      description: "Developed a Python-based phishing URL detection tool classifying links as Safe, Suspicious, or Likely Phishing using rule-based analysis on a large synthetic dataset. Built a desktop GUI for immediate risk labels.",
+      description: "Developed a phishing detection tool that analyzes URL characteristics and classifies links as Safe, Suspicious, or Likely Phishing to support cybersecurity risk identification. Analyzed patterns across a large synthetic URL dataset using rule-based security analysis. Built a security GUI providing immediate risk classifications and explanations, processing URL datasets with Pandas/CSV.",
       link: "https://github.com/YOUR_GITHUB_USERNAME/phishshield" 
     },
     {
       title: "Keyless Door Authentication System",
       tech: "Python, OpenCV, Librosa, Scikit-learn",
-      description: "Developed a multi-factor authentication system integrating facial recognition, voice authentication, and keypad verification using K-Nearest Neighbors (KNN) to deliver accurate, low-latency user authentication.",
+      description: "Designed a multi-factor authentication system combining facial recognition, voice authentication, and keypad verification to strengthen access control. Applied K-Nearest Neighbors (KNN), OpenCV, and Librosa to analyze biometric inputs and support secure, low-latency authentication. Implemented layered authentication to protect access to digital assets.",
       link: "https://github.com/YOUR_GITHUB_USERNAME/keyless-door" 
-    },
-    {
-      title: "E-Waste Management System",
-      tech: "Java, Android, Firebase",
-      description: "Developed an Android application connecting buyers and vendors for efficient electronic waste management. Designed intuitive UIs and implemented backend integration for secure data storage.",
-      link: "https://github.com/YOUR_GITHUB_USERNAME/ewaste-management" 
     }
   ],
   publications: [
