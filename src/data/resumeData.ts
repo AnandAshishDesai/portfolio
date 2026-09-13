@@ -108,19 +108,19 @@ export const resumeData = {
       degree: "Master of Business and Science in Cybersecurity",
       school: "Rutgers University – New Brunswick, NJ, USA",
       date: "Jan 2026 – Present",
-      gpa: "CGPA: 4.0/4.0"
+      gpa: "CGPA: 3.9/4.0"
     },
     {
       degree: "Bachelor of Technology in Computer Engineering",
       school: "K. J. Somaiya Institute of Technology, Mumbai, India",
       date: "2022 – 2025",
-      gpa: "CGPA: 8.50/10"
+      gpa: "CGPA: 8.5/10"
     },
     {
       degree: "Diploma in Computer Engineering",
       school: "Shri Bhagubhai Mafatlal Polytechnic, Mumbai, India",
       date: "2019 – 2022",
-      gpa: "Percentage: 92%"
+      gpa: "CGPA: 9.2/10"
     }
   ]
 };
